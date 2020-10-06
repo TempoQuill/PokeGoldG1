@@ -18,3 +18,6 @@ While this hack has relatively few changes outside of music, it does have a few 
 -The NPC-trades boast better nicknames for Pokemon, such as Brent, Capper and Sandy.
 
 -Brent's Bitter Berry was replaced by a Metal Coat, but he doesn't evolve when you get him.
+
+
+If anybody wants to build this hack, feel free.

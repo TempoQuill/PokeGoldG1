@@ -1,0 +1,12 @@
+RadioChannelSongs:
+; entries correspond to radio channel ids
+	dw MUSIC_OAKS_LAB
+	dw MUSIC_POKECENTER
+	dw MUSIC_TITLE
+	dw MUSIC_GAME_CORNER
+	dw MUSIC_VIRIDIAN
+	dw MUSIC_BIKE
+	dw MUSIC_SILPH_CO
+	dw MUSIC_POKE_FLUTE
+	dw MUSIC_UNOWN_SIGNAL
+	dw MUSIC_ROCKET_SIGNAL

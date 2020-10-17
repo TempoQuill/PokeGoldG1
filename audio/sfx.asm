@@ -902,7 +902,7 @@ Sfx_PLShort:
 	channel_count 3
 	channel 5, Sfx_PLShort_Ch5
 	channel 6, Sfx_PLShort_Ch6
-	channel 7, Sfx_PLShort_Ch8
+	channel 7, Sfx_PLShort_Ch7
 
 Sfx_CaughtMon:
 	channel_count 3
@@ -976,7 +976,7 @@ Sfx_PLLong:
 	channel_count 3
 	channel 5, Sfx_PLLong_Ch5
 	channel 6, Sfx_PLLong_Ch6
-	channel 7, Sfx_PLLong_Ch8
+	channel 7, Sfx_PLLong_Ch7
 
 Sfx_Protect:
 	channel_count 2
@@ -3170,7 +3170,7 @@ Sfx_PLShort_Ch6:
 	note F_, 12
 	sound_ret
 
-Sfx_PLShort_Ch8:
+Sfx_PLShort_Ch7:
 	toggle_sfx
 	note_type 6, 1, 0
 	octave 5
@@ -3254,7 +3254,7 @@ Sfx_PLLong_Ch6:
 	note F#, 12
 	sound_ret
 
-Sfx_PLLong_Ch8:
+Sfx_PLLong_Ch7:
 	toggle_sfx
 	note_type 6, 1, 0
 	octave 4

@@ -1,5 +1,5 @@
 Music_Elm:
-	channel_count 4
+	channel_count 3
 	channel 1, Music_Elm_Ch1
 	channel 2, Music_Elm_Ch2
 	channel 3, Music_Elm_Ch3

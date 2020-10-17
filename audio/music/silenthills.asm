@@ -1,5 +1,5 @@
 Music_SilentHills:
-	channel_count 3
+	channel_count 4
 	channel 1, Music_SilentHills_Ch1
 	channel 2, Music_SilentHills_Ch2
 	channel 3, Music_SilentHills_Ch3

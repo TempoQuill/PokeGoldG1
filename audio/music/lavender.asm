@@ -1,5 +1,5 @@
 Music_Lavender:
-	channel_count 3
+	channel_count 4
 	channel 1, Music_Lavender_Ch1
 	channel 2, Music_Lavender_Ch2
 	channel 3, Music_Lavender_Ch3

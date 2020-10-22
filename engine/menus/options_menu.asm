@@ -3,12 +3,11 @@
 	const OPT_TEXT_SPEED   ; 0
 	const OPT_BATTLE_SCENE ; 1
 	const OPT_BATTLE_STYLE ; 2
-	const OPT_SOUND        ; 3
-	const OPT_PRINT        ; 4
-	const OPT_MENU_ACCOUNT ; 5
-	const OPT_FRAME        ; 6
-	const OPT_CANCEL       ; 7
-NUM_OPTIONS EQU const_value    ; 8
+	const OPT_PRINT        ; 3
+	const OPT_MENU_ACCOUNT ; 4
+	const OPT_FRAME        ; 5
+	const OPT_CANCEL       ; 6
+NUM_OPTIONS EQU const_value    ; 7
 
 _Option:
 	ld hl, hInMenu
@@ -77,8 +76,6 @@ StringOptions:
 	db "        :<LF>"
 	db "BATTLE STYLE<LF>"
 	db "        :<LF>"
-	db "SOUND<LF>"
-	db "        :<LF>"
 	db "PRINT<LF>"
 	db "        :<LF>"
 	db "MENU ACCOUNT<LF>"
@@ -95,7 +92,6 @@ GetOptionPointer:
 	dw Options_TextSpeed
 	dw Options_BattleScene
 	dw Options_BattleStyle
-	dw Options_Sound
 	dw Options_Print
 	dw Options_MenuAccount
 	dw Options_Frame
@@ -263,51 +259,6 @@ Options_BattleStyle:
 
 .Shift: db "SHIFT@"
 .Set:   db "SET  @"
-
-Options_Sound:
-	ld hl, wOptions
-	ldh a, [hJoyPressed]
-	bit D_LEFT_F, a
-	jr nz, .LeftPressed
-	bit D_RIGHT_F, a
-	jr z, .NonePressed
-	bit STEREO, [hl]
-	jr nz, .SetMono
-	jr .SetStereo
-
-.LeftPressed:
-	bit STEREO, [hl]
-	jr z, .SetStereo
-	jr .SetMono
-
-.NonePressed:
-	bit STEREO, [hl]
-	jr nz, .ToggleStereo
-	jr .ToggleMono
-
-.SetMono:
-	res STEREO, [hl]
-	call RestartMapMusic
-
-.ToggleMono:
-	ld de, .Mono
-	jr .Display
-
-.SetStereo:
-	set STEREO, [hl]
-	call RestartMapMusic
-
-.ToggleStereo:
-	ld de, .Stereo
-
-.Display:
-	hlcoord 11, 9
-	call PlaceString
-	and a
-	ret
-
-.Mono:   db "MONO  @"
-.Stereo: db "STEREO@"
 
 	const_def
 	const OPT_PRINT_LIGHTEST ; 0

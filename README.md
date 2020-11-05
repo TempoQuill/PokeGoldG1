@@ -9,7 +9,7 @@ While this hack has relatively few changes outside of music, it does have a few 
 
 -Kanto's map music is closer to what it was in RBY.
 
--You can talk to Jigglypuff at the Radio Tower or the Pewter City Pokemon Center and hear the Jigglypuff jingle from RBY.
+-(ASM version only) You can talk to Jigglypuff at the Radio Tower or the Pewter City Pokemon Center and hear the Jigglypuff jingle from RBY.
 
 -The Magnet Train now plays the new Pokemon Channel music. (Though this started as a mistake, I kept it in because it fit.)
 

@@ -253,6 +253,7 @@ Music_Elm_Ch3
 	octave 5
 	note C_, 1
 	rest 1
+.mainloop:
 	octave 4
 	note F_, 1
 	rest 1

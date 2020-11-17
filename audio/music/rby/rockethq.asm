@@ -1,8 +1,15 @@
+Music_RocketHQ:
+	channel_count 4
+	channel 1, Music_RocketHQ_Ch1
+	channel 2, Music_RocketHQ_Ch2
+	channel 3, Music_RocketHQ_Ch3
+	channel 4, Music_RocketHQ_Ch4
+
 Music_RocketHQ_Ch1:
 	tempo 144
 	volume 7, 7
 	duty_cycle 3
-	pitch_offset
+	pitch_offset 1
 	vibrato 10, 1, 4
 	note_type 12, 4, -5
 	rest 8
@@ -527,7 +534,7 @@ Music_RocketHQ_Ch3:
 	rest 10
 	sound_ret
 
-Music_Dungeon1_branch_7e177::
+.sub3:
 	octave 4
 	note E_, 1
 	rest 3

@@ -357,32 +357,37 @@ Music_Title_Ch3:
 	note C#, 3
 	octave 3
 	note A_, 3
-	note_type 2, 1, 0
+	note_type 12, 1, 0
 	octave 4
-	note D_, 6
-	rest 16
-	rest 14
+	note D_, 1
+	rest 5
 	octave 5
-	sound_call .sub4
-	rest 16
-	rest 8
-	sound_call .sub5
-	sound_call .sub4
-	rest 12
-	octave 4
-	note C_, 16
-	note C_, 16
-	note C#, 16
-	note D_, 6
-	rest 16
-	rest 14
-	sound_call .sub5
-	rest 16
-	rest 8
-	sound_call .sub4
-	rest 16
-	rest 16
+	pitch_slide 1, 4, D_
+	note D_, 4
 	rest 4
+	octave 6
+	pitch_slide 1, 5, D_
+	note D_, 4
+	octave 5
+	pitch_slide 1, 4, D_
+	note D_, 4
+	rest 2
+	note_type 8, 1, 0
+	octave 4
+	note C_, 4
+	note C_, 4
+	note C#, 4
+	note_type 12, 1, 0
+	note D_, 1
+	rest 5
+	octave 6
+	pitch_slide 1, 5, D_
+	note D_, 4
+	rest 4
+	octave 5
+	pitch_slide 1, 4, D_
+	note D_, 4
+	rest 6
 	note_type 8, 1, 0
 	octave 4
 	note C_, 4
@@ -418,41 +423,6 @@ Music_Title_Ch3:
 	octave 3
 	note G_, 3
 	octave 4
-	sound_ret
-
-.sub4:
-	note D_, 1
-	note C#, 1
-	note C_, 2
-	octave 4
-	note B_, 1
-	note A#, 2
-	note A_, 1
-	note G#, 2
-	note G_, 2
-	note F#, 2
-	note F_, 2
-	note E_, 2
-	note D#, 2
-	note D_, 4
-	sound_ret
-
-.sub5:
-	octave 6
-	note D_, 1
-	note C#, 1
-	note C_, 2
-	octave 5
-	note B_, 1
-	note A#, 2
-	note A_, 1
-	note G#, 2
-	note G_, 2
-	note F#, 2
-	note F_, 2
-	note E_, 2
-	note D#, 2
-	note D_, 4
 	sound_ret
 
 Music_Title_Ch4:

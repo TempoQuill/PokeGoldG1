@@ -174,6 +174,7 @@ Music_Route36_Ch2:
 	note D#, 8
 	octave 3
 	note F_, 4
+.mainloop:
 	volume_envelope 14, 6
 	octave 3
 	note A#, 10

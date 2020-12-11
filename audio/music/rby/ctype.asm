@@ -965,16 +965,8 @@ Music_CType_Ch3:
 .sub2:
 	rest 5
 .sub2loop1:
-	note_type 2, 1, 0
-	octave 2
+	pitch_slide 1, 2, B_
 	note B_, 1
-	octave 3
-	note G#, 1
-	note F#, 1
-	note E_, 1
-	note D_, 1
-	note C_, 1
-	note_type 12, 1, 0
 	rest 3
 	sound_loop 2, .sub2loop1
 	octave 4

@@ -15,7 +15,7 @@ Music_Elm_Ch1:
 	octave 2
 	note G_, 1
 	note A_, 1
-	note_A#, 1
+	note A#, 1
 	octave 3
 	note C_, 1
 	note D_, 1

@@ -150,7 +150,7 @@ Music_Elm_Ch2:
 	note F_, 1
 	note G_, 1
 	note A_, 1
-	note_A#, 1
+	note A#, 1
 	octave 4
 	note C_, 1
 	note D_, 1
@@ -324,16 +324,16 @@ Music_Elm_Ch3
 	note A_, 1
 	rest 1
 	octave 3
-	note_A#, 1
+	note A#, 1
 	rest 1
 	octave 4
 	note F_, 1
 	rest 3
-	note_A#, 1
+	note A#, 1
 	rest 3
 	note F_, 1
 	rest 1
-	note_A#, 1
+	note A#, 1
 	rest 1
 	octave 5
 	note D_, 1
@@ -357,11 +357,11 @@ Music_Elm_Ch3
 	octave 4
 	note F_, 1
 	rest 1
-	note_A#, 1
+	note A#, 1
 	rest 1
 	note F_, 1
 	rest 1
-	note_A#, 1
+	note A#, 1
 	rest 1
 	note F_, 1
 	rest 1
@@ -371,7 +371,7 @@ Music_Elm_Ch3
 	octave 4
 	note F_, 1
 	rest 1
-	note_A#, 1
+	note A#, 1
 	rest 1
 	octave 5
 	note C_, 1

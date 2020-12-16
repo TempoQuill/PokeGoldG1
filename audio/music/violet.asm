@@ -245,7 +245,7 @@ Music_Violet_Ch2:
 	octave 4
 	note E_, 2
 	note D#, 4
-	note C#, 3
+	note C#, 4
 	volume_envelope 13, 7
 	octave 3
 	note B_, 16

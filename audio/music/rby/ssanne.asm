@@ -266,3 +266,4 @@ Music_SSAnne_Ch3::
 	note G#, 8
 	note B_, 8
 	sound_jump Music_SSAnne_Ch3
+

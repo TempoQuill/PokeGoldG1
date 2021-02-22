@@ -1,39 +1,26 @@
-Music_SilphCo_Ch1::
+Music_SilphCo:
+	channel_count 3
+	channel 1, Music_SilphCo_Ch1
+	channel 2, Music_SilphCo_Ch2
+	channel 3, Music_SilphCo_Ch3
+
+Music_SilphCo_Ch1:
 	tempo 160
 	volume 7, 7
 	duty_cycle 3
-	toggle_perfect_pitch
+	pitch_offset 1
 	vibrato 8, 2, 2
-	note_type 6, 11, 3
-	octave 2
-	note E_, 1
-	note F#, 1
-	note G#, 1
-	note A#, 1
-	octave 3
-	note C_, 1
+	sound_call .sub7
 	note_type 6, 10, 0
 	note C_, 12
 	note_type 6, 11, 3
 	note C_, 2
-	octave 2
-	note B_, 1
-	note A#, 1
-	note G#, 1
-	note F#, 1
-	note E_, 1
+	sound_call .sub6
 	note E_, 2
 	rest 2
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
+.mainloop:
+	sound_call .sub1
 	rest 2
-
-Music_SilphCo_branch_7f26d::
 	note G_, 2
 	rest 2
 	note B_, 2
@@ -54,12 +41,7 @@ Music_SilphCo_branch_7f26d::
 	note C_, 2
 	rest 6
 	note C_, 2
-	rest 6
-	note C_, 2
-	rest 6
-	note C_, 2
-	rest 6
-	octave 2
+	sound_call .sub3
 	note A#, 2
 	rest 6
 	note B_, 2
@@ -78,18 +60,7 @@ Music_SilphCo_branch_7f26d::
 	note G_, 1
 	note F_, 1
 	note E_, 1
-	rest 11
-	note F_, 1
-	note G#, 1
-	note A#, 1
-	note B_, 1
-	note_type 6, 10, 0
-	octave 3
-	note C_, 12
-	note_type 6, 11, 3
-	note C_, 1
-	octave 2
-	note B_, 1
+	sound_call .sub4
 	note A_, 1
 	note G_, 1
 	note F_, 1
@@ -108,18 +79,7 @@ Music_SilphCo_branch_7f26d::
 	note A#, 1
 	note G_, 1
 	note F_, 1
-	rest 11
-	note F_, 1
-	note G#, 1
-	note A#, 1
-	note B_, 1
-	note_type 6, 10, 0
-	octave 3
-	note C_, 12
-	note_type 6, 11, 3
-	note C_, 1
-	octave 2
-	note B_, 1
+	sound_call .sub4
 	note G#, 1
 	note F_, 1
 	note E_, 1
@@ -143,40 +103,14 @@ Music_SilphCo_branch_7f26d::
 	rest 6
 	note A_, 2
 	rest 6
+.loop1:
+	sound_call .sub5
 	note B_, 2
 	note A#, 2
-	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
+	sound_loop 2, .loop1
+.loop2:
+	sound_call .sub5
+	sound_loop 3, .loop2
 	note B_, 2
 	note A#, 2
 	note B_, 2
@@ -185,87 +119,45 @@ Music_SilphCo_branch_7f26d::
 	note A#, 2
 	note B_, 2
 	note A#, 2
-	sound_call Music_SilphCo_branch_7f3f0
-	sound_call Music_SilphCo_branch_7f3f0
-	sound_call Music_SilphCo_branch_7f3f0
+.loop3:
+	sound_call .sub5
+	sound_loop 11, .loop3
+	note B_, 2
+	note A#, 2
+	note B_, 2
+	octave 3
+	note C_, 2
 	rest 4
 	note C_, 2
-	rest 6
-	note C_, 2
-	rest 6
-	note C_, 2
-	rest 6
-	octave 2
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
+	sound_call .sub3
+	sound_call .sub1
 	rest 6
 	note A#, 2
+.loop4:
 	rest 6
 	note A_, 2
-	rest 6
-	note A_, 2
-	rest 6
-	note A_, 2
-	rest 6
-	note A_, 2
-	rest 6
-	note A_, 2
-	rest 6
-	note A_, 2
+	sound_loop 6, .loop4
 	rest 6
 	note A#, 2
 	rest 6
 	note A#, 2
 	rest 6
-	note B_, 2
+	sound_call .sub1
 	rest 6
 	note B_, 2
 	rest 6
 	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
 	octave 3
-	note C_, 2
-	rest 6
-	note C_, 2
-	rest 6
-	octave 2
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
+	sound_call .sub3
+	sound_call .sub1
 	rest 6
 	octave 3
 	note B_, 2
 	rest 6
 	note B_, 2
-	rest 6
 	octave 4
-	note C_, 2
-	rest 6
-	note C_, 2
-	rest 6
-	octave 2
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
+	sound_call .sub3
+	sound_call .sub1
 	rest 6
 	octave 4
 	note E_, 2
@@ -276,33 +168,17 @@ Music_SilphCo_branch_7f26d::
 	rest 6
 	note D#, 2
 	rest 2
-	octave 2
-	note B_, 1
-	note A#, 1
-	note G#, 1
-	note F#, 1
-	note E_, 1
+	sound_call .sub6
 	note_type 6, 6, 0
 	note E_, 16
 	note E_, 11
-	note_type 6, 11, 3
-	note E_, 1
-	note F#, 1
-	note G#, 1
-	note A#, 1
-	octave 3
-	note C_, 1
+	sound_call .sub7
 	note_type 6, 3, -7
 	note C_, 16
 	note_type 6, 10, 0
 	note C_, 11
 	note_type 6, 9, 3
-	octave 2
-	note B_, 1
-	note A#, 1
-	note G#, 1
-	note F#, 1
-	note E_, 1
+	sound_call .sub6
 	note_type 6, 3, -7
 	note E_, 16
 	note_type 6, 9, 0
@@ -318,26 +194,19 @@ Music_SilphCo_branch_7f26d::
 	note D_, 16
 	note_type 6, 10, 7
 	note D_, 11
-	rest 4
-	rest 4
+	rest 8
 	tempo 128
-	rest 4
-	rest 4
+	rest 8
 	tempo 136
-	rest 4
-	rest 4
+	rest 8
 	tempo 144
-	rest 4
-	rest 4
+	rest 8
 	tempo 160
-	rest 4
-	rest 4
+	rest 8
 	tempo 192
-	rest 4
-	rest 4
+	rest 8
 	tempo 288
-	rest 4
-	rest 4
+	rest 8
 	tempo 416
 	rest 4
 	tempo 1024
@@ -357,45 +226,79 @@ Music_SilphCo_branch_7f26d::
 	note_type 6, 5, 0
 	note B_, 8
 	note_type 6, 11, 3
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 2
-	sound_jump Music_SilphCo_branch_7f26d
+	sound_jump .mainloop
 
-Music_SilphCo_branch_7f3f0::
-	octave 2
+.sub1:
 	note B_, 2
-	note A#, 2
+	rest 6
 	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
+	rest 6
 	note B_, 2
-	note A#, 2
+	rest 6
 	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	octave 3
-	note C_, 2
-	octave 2
-	note B_, 2
-	note A#, 2
-	note B_, 2
-	octave 3
-	note C_, 2
 	sound_ret
 
+.sub2:
+	rest 2
+	note G_, 2
+	rest 2
+	note B_, 2
+	sound_ret
 
-Music_SilphCo_Ch2::
+.sub3:
+	rest 6
+	note C_, 2
+	rest 6
+	note C_, 2
+	rest 6
+	octave 2
+	sound_ret
+
+.sub4:
+	rest 11
+	note F_, 1
+	note G#, 1
+	note A#, 1
+	note B_, 1
+	note_type 6, 10, 0
+	octave 3
+	note C_, 12
+	note_type 6, 11, 3
+	note C_, 1
+	octave 2
+	note B_, 1
+	sound_ret
+
+.sub5:
+	note B_, 2
+	note A#, 2
+	note B_, 2
+	octave 3
+	note C_, 2
+	octave 2
+	sound_ret
+
+.sub6:
+	octave 2
+	note B_, 1
+	note A#, 1
+	note G#, 1
+	note F#, 1
+	note E_, 1
+	sound_ret
+
+.sub7:
+	note_type 6, 11, 3
+	octave 2
+	note E_, 1
+	note F#, 1
+	note G#, 1
+	note A#, 1
+	octave 3
+	note C_, 1
+	sound_ret
+
+Music_SilphCo_Ch2:
 	vibrato 10, 3, 2
 	duty_cycle 3
 	note_type 6, 12, 3
@@ -418,64 +321,24 @@ Music_SilphCo_Ch2::
 	note E_, 1
 	note E_, 2
 	rest 2
+.mainloop:
 	octave 2
+	sound_call .sub1
 	note G_, 2
 	rest 6
-	note F#, 2
-	rest 6
 	note G_, 2
 	rest 6
+	sound_call .sub1
+.loop1:
+	note G#, 2
+	rest 6
+	sound_loop 5, .loop1
 	note G#, 2
 	rest 2
-
-Music_SilphCo_branch_7f42e::
-	note E_, 2
-	rest 2
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 6
-	note F#, 2
-	rest 6
-	note G_, 2
-	rest 6
-	note G#, 2
-	rest 2
-	note E_, 2
-	rest 2
-	note G#, 2
-	rest 6
-	note G#, 2
-	rest 6
-	note G#, 2
-	rest 6
-	note G#, 2
-	rest 6
-	note G#, 2
-	rest 6
-	note G#, 2
-	rest 2
-	note_type 6, 11, 7
+	note_type 12, 11, 7
 	duty_cycle 2
 	octave 4
-	note E_, 8
-	note D#, 8
-	note E_, 8
-	note F_, 8
-	note E_, 8
-	note D#, 8
-	note D_, 8
-	note D#, 8
-	note E_, 8
-	note F_, 8
-	note F#, 8
-	note G_, 8
-	note G#, 8
-	note D#, 8
-	note D_, 8
-	note D#, 8
+	sound_call .sub2
 	duty_cycle 3
 	note_type 6, 6, -7
 	note E_, 16
@@ -483,24 +346,8 @@ Music_SilphCo_branch_7f42e::
 	note B_, 16
 	note_type 6, 12, 4
 	octave 3
-	note E_, 4
-	note D#, 4
-	note E_, 4
-	note F_, 4
-	note E_, 4
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note E_, 4
-	note F_, 4
-	note F#, 4
-	note G_, 4
-	note G#, 4
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note_type 6, 12, 2
-	duty_cycle 1
+	sound_call .sub2
+	sound_call .sub4
 	octave 4
 	note E_, 4
 	note D#, 4
@@ -514,13 +361,7 @@ Music_SilphCo_branch_7f42e::
 	note_type 6, 12, 4
 	duty_cycle 3
 	octave 3
-	note F_, 4
-	note F#, 4
-	note G_, 4
-	note G#, 4
-	note D#, 4
-	note D_, 4
-	note D#, 4
+	sound_call .sub3
 	note E_, 4
 	note D#, 4
 	note E_, 4
@@ -566,150 +407,71 @@ Music_SilphCo_branch_7f42e::
 	note D_, 4
 	note D#, 4
 	note D_, 4
-	note_type 6, 12, 2
-	duty_cycle 1
+	sound_call .sub4
 	note F_, 4
 	note F#, 4
 	note G_, 4
 	note G#, 4
 	note A_, 4
-	note_type 6, 11, 4
-	duty_cycle 3
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note_type 6, 12, 2
-	duty_cycle 1
+	sound_call .sub5
+	sound_call .sub4
 	note F_, 4
 	note F#, 4
 	note G_, 4
 	note G#, 4
 	note A#, 4
-	note_type 6, 11, 4
-	duty_cycle 3
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note_type 6, 12, 2
-	duty_cycle 1
+	sound_call .sub5
+	sound_call .sub4
 	note F_, 4
 	note F#, 4
 	note G_, 4
 	note G#, 4
 	note B_, 4
-	note_type 6, 11, 4
-	duty_cycle 3
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note_type 6, 12, 2
-	duty_cycle 1
+	sound_call .sub5
+	sound_call .sub4
 	note F_, 4
 	note F#, 4
 	note G_, 4
 	note G#, 4
 	octave 4
 	note C_, 4
-	note_type 6, 11, 4
-	duty_cycle 3
 	octave 3
-	note D#, 4
-	note D_, 4
-	note D#, 4
+	sound_call .sub5
 	rest 4
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 2
-	duty_cycle 0
-	octave 4
-	note E_, 2
-	rest 2
+	sound_call .sub6
+.loop2:
 	note G#, 2
 	rest 6
-	note G#, 2
-	rest 6
-	note G#, 2
-	rest 6
-	note G#, 2
-	rest 6
+	sound_loop 4, .loop2
 	duty_cycle 3
 	octave 3
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 6
-	note G_, 2
-	rest 2
-	duty_cycle 0
-	octave 4
-	note E_, 2
-	rest 2
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
-	rest 6
-	note B_, 2
+	sound_call .sub6
+	sound_call Music_SilphCo_Ch1.sub1
 	rest 2
 	duty_cycle 3
 	octave 3
 	note G_, 2
+.loop3:
 	rest 2
 	note G_, 2
 	rest 2
 	note B_, 2
-	rest 2
-	note G_, 2
-	rest 2
-	note B_, 2
-	rest 2
-	note G_, 2
-	rest 2
-	note B_, 2
+	sound_loop 3, .loop3
+	octave 3
+.loop4:
 	rest 2
 	note G_, 2
 	rest 2
 	octave 4
 	note C_, 2
-	rest 2
 	octave 3
-	note G_, 2
-	rest 2
-	octave 4
-	note C_, 2
-	rest 2
-	octave 3
-	note G_, 2
-	rest 2
-	octave 4
-	note C_, 2
-	rest 2
-	octave 3
-	note G_, 2
-	rest 2
-	octave 4
-	note C_, 2
-	rest 2
-	octave 3
-	note G_, 2
-	rest 2
-	note B_, 2
+	sound_loop 4, .loop4
+.loop5:
 	rest 2
 	note G_, 2
 	rest 2
 	note B_, 2
-	rest 2
-	note G_, 2
-	rest 2
-	note B_, 2
+	sound_loop 3, .loop5
 	rest 2
 	note G_, 2
 	rest 2
@@ -739,22 +501,7 @@ Music_SilphCo_branch_7f42e::
 	rest 2
 	note_type 6, 8, 7
 	octave 5
-	note E_, 4
-	note D#, 4
-	note E_, 4
-	note F_, 4
-	note E_, 4
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note E_, 4
-	note F_, 4
-	note F#, 4
-	note G_, 4
-	note G#, 4
-	note D#, 4
-	note D_, 4
-	note D#, 4
+	sound_call .sub2
 	rest 4
 	note_type 6, 4, 3
 	octave 2
@@ -769,6 +516,9 @@ Music_SilphCo_branch_7f42e::
 	note_type 6, 4, -7
 	note G#, 8
 	note_type 6, 11, 4
+	sound_jump .mainloop
+
+.sub1:
 	note G_, 2
 	rest 6
 	note F#, 2
@@ -777,25 +527,21 @@ Music_SilphCo_branch_7f42e::
 	rest 6
 	note G#, 2
 	rest 2
-	sound_jump Music_SilphCo_branch_7f42e
+	note E_, 2
+	rest 2
+	sound_ret
 
-
-Music_SilphCo_Ch3::
-	vibrato 8, 1, 1
-	note_type 12, 1, 1
-	rest 12
-	octave 5
+.sub2:
 	note E_, 4
 	note D#, 4
 	note E_, 4
 	note F_, 4
-
-Music_SilphCo_branch_7f5c9::
 	note E_, 4
 	note D#, 4
 	note D_, 4
 	note D#, 4
 	note E_, 4
+.sub3:
 	note F_, 4
 	note F#, 4
 	note G_, 4
@@ -803,55 +549,69 @@ Music_SilphCo_branch_7f5c9::
 	note D#, 4
 	note D_, 4
 	note D#, 4
+	sound_ret
+
+.sub4:
+	note_type 6, 12, 2
+	duty_cycle 1
+	sound_ret
+
+.sub5:
+	note_type 6, 11, 4
+	duty_cycle 3
+	note D#, 4
+	note D_, 4
+	note D#, 4
+	sound_ret
+
+.sub6:
+	note G_, 2
+	rest 6
+	note G_, 2
+	rest 6
+	note G_, 2
+	rest 6
+	note G_, 2
+	rest 2
+	duty_cycle 0
+	octave 4
+	note E_, 2
+	rest 2
+	sound_ret
+
+Music_SilphCo_Ch3::
+	vibrato 8, 1, 1
+	note_type 12, 1, 1
+	rest 12
+.mainloop:
+	octave 5
+	sound_call Music_SilphCo_Ch2.sub2
+	note E_, 1
+	rest 1
+	sound_call .sub1
 	note E_, 1
 	rest 1
 	note G_, 1
 	rest 3
-	note F#, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G#, 1
-	rest 1
-	note E_, 1
-	rest 1
-	note G_, 1
-	rest 3
 	note G#, 1
 	rest 3
-	note G_, 1
-	rest 3
-	note F#, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G#, 1
-	rest 1
+	sound_call .sub1
 	note F_, 1
 	rest 1
 	note G#, 1
 	rest 3
 	note G#, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G#, 1
-	rest 1
+	sound_call .sub2
 	note E_, 1
 	rest 1
 	note G#, 1
+.loop1:
 	rest 3
 	note G_, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G_, 1
+	sound_loop 5, .loop1
 	rest 1
 	octave 4
+.loop2:
 	note E_, 1
 	rest 5
 	note F_, 1
@@ -862,16 +622,7 @@ Music_SilphCo_branch_7f5c9::
 	rest 11
 	note D#, 1
 	rest 3
-	note E_, 1
-	rest 5
-	note F_, 1
-	rest 5
-	note F_, 1
-	rest 3
-	note E_, 1
-	rest 11
-	note D#, 1
-	rest 3
+	sound_loop 2, .loop2
 	note E_, 1
 	rest 1
 	note F_, 1
@@ -894,16 +645,10 @@ Music_SilphCo_branch_7f5c9::
 	rest 1
 	note F#, 1
 	rest 1
+.loop3:
 	note G_, 1
 	rest 3
-	note G_, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G_, 1
-	rest 3
-	note G_, 1
-	rest 3
+	sound_loop 5, .loop3
 	note F#, 1
 	rest 3
 	note F_, 1
@@ -954,47 +699,21 @@ Music_SilphCo_branch_7f5c9::
 	note D_, 2
 	note D#, 2
 	octave 6
-	note E_, 4
-	note D#, 4
-	note E_, 4
-	note F_, 4
-	note E_, 4
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note E_, 4
-	note F_, 4
-	note F#, 4
-	note G_, 4
-	note G#, 4
-	note D#, 4
-	note D_, 4
-	note D#, 4
-	note_type 6, 1, 1
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	rest 4
+	sound_call Music_SilphCo_Ch2.sub2
 	note_type 12, 1, 1
-	rest 4
-	rest 4
-	rest 4
-	rest 4
-	octave 5
-	note E_, 4
-	note D#, 4
-	note E_, 4
-	note F_, 4
-	sound_jump Music_SilphCo_branch_7f5c9
+.loop4:
+	rest 2
+	sound_loop 24, .loop4
+	sound_jump .mainloop
+
+.sub1:
+	note G_, 1
+	rest 3
+	note F#, 1
+.sub2:
+	rest 3
+	note G_, 1
+	rest 3
+	note G#, 1
+	rest 1
+	sound_ret

@@ -1,68 +1,30 @@
-Music_SSAnne_Ch1::
+Music_SSAnne:
+	channel_count 3
+	channel 1, Music_SSAnne_Ch1
+	channel 2, Music_SSAnne_Ch2
+	channel 3, Music_SSAnne_Ch3
+
+Music_SSAnne_Ch1:
 	tempo 128
 	volume 7, 7
 	duty_cycle 1
 	vibrato 8, 3, 4
-	toggle_perfect_pitch
-
-Music_SSAnne_branch_b3b2::
+	pitch_offset 1
+.mainloop:
 	note_type 12, 10, 4
 	rest 12
 	octave 3
 	note E_, 2
 	note F#, 2
-	note E_, 4
-	note D_, 4
-	note C#, 2
-	note D_, 2
-	note E_, 2
-	rest 2
-	note E_, 4
-	note F#, 2
-	note D_, 2
-	note E_, 4
-	note F#, 4
-	note G#, 4
+	sound_call .sub2
 	rest 4
 	note E_, 4
 	note G#, 4
-	rest 4
-	note C#, 2
-	note E_, 2
-	note F#, 4
-	note D_, 4
-	note E_, 4
-	note D_, 4
-	note C#, 2
-	note D_, 2
-	note E_, 2
-	rest 2
-	note E_, 4
-	note F#, 2
-	note D_, 2
-	note E_, 4
-	note F#, 4
-	note G#, 4
+	sound_call .sub1
 	note F#, 4
 	note E_, 4
 	note F#, 4
-	rest 4
-	note C#, 2
-	note E_, 2
-	note F#, 4
-	note D_, 4
-	note E_, 4
-	note D_, 4
-	note C#, 2
-	note D_, 2
-	note E_, 2
-	rest 2
-	note E_, 4
-	note F#, 2
-	note D_, 2
-	note E_, 4
-	note F#, 4
-	note G#, 4
+	sound_call .sub1
 	note F#, 8
 	note G#, 4
 	note E_, 4
@@ -104,104 +66,43 @@ Music_SSAnne_branch_b3b2::
 	rest 4
 	octave 3
 	note D_, 8
-	sound_jump Music_SSAnne_branch_b3b2
+	sound_jump .mainloop
 
-
-Music_SSAnne_Ch2::
-	duty_cycle 0
-	vibrato 12, 2, 4
-
-Music_SSAnne_branch_b41e::
-	note_type 12, 12, 5
-	octave 3
-	note A_, 2
+.sub1:
+	rest 4
+	note C#, 2
 	note E_, 2
-	note A_, 4
-	note B_, 4
-	octave 4
+	note F#, 4
 	note D_, 4
+.sub2:
+	note E_, 4
+	note D_, 4
+	note C#, 2
+	note D_, 2
+	note E_, 2
+	rest 2
+	note E_, 4
+	note F#, 2
+	note D_, 2
+	note E_, 4
+	note F#, 4
+	note G#, 4
+	sound_ret
+
+Music_SSAnne_Ch2:
+	vibrato 12, 2, 4
 	note_type 8, 12, 5
-	note C#, 2
-	note D_, 2
-	note C#, 2
+.mainloop:
 	octave 3
-	note B_, 3
-	note A_, 3
-	note B_, 6
-	note G#, 6
-	note A_, 3
-	note B_, 3
-	octave 4
-	note C#, 6
-	note D_, 6
-	note C#, 3
-	octave 3
-	note B_, 3
-	octave 4
-	note E_, 6
-	note D_, 3
-	note C#, 3
-	octave 3
+	sound_call .sub1
 	note B_, 6
 	octave 4
 	note C#, 3
 	octave 3
 	note B_, 3
-	note A_, 3
-	note E_, 3
-	note A_, 6
-	note B_, 6
-	octave 4
-	note D_, 6
-	note C#, 2
-	note D_, 2
-	note C#, 2
-	octave 3
-	note B_, 3
-	note A_, 3
-	note B_, 6
-	note G#, 6
-	note A_, 3
-	note B_, 3
-	octave 4
-	note C#, 6
-	note D_, 6
-	note C#, 3
-	octave 3
-	note B_, 3
-	octave 4
-	note E_, 6
-	note D_, 3
-	note C#, 3
-	octave 3
+	sound_call .sub1
 	note B_, 12
-	note A_, 3
-	note E_, 3
-	note A_, 6
-	note B_, 6
-	octave 4
-	note D_, 6
-	note C#, 2
-	note D_, 2
-	note C#, 2
-	octave 3
-	note B_, 3
-	note A_, 3
-	note B_, 6
-	note G#, 6
-	note A_, 3
-	note B_, 3
-	octave 4
-	note C#, 6
-	note D_, 6
-	note C#, 3
-	octave 3
-	note B_, 3
-	octave 4
-	note E_, 6
-	note D_, 3
-	note C#, 3
-	octave 3
+	sound_call .sub1
 	note B_, 12
 	rest 3
 	octave 4
@@ -279,8 +180,37 @@ Music_SSAnne_branch_b41e::
 	note C#, 3
 	octave 3
 	note B_, 3
-	sound_jump Music_SSAnne_branch_b41e
+	sound_jump .mainloop
 
+.sub1:
+	note A_, 3
+	note E_, 3
+	note A_, 6
+	note B_, 6
+	octave 4
+	note D_, 6
+	note C#, 2
+	note D_, 2
+	note C#, 2
+	octave 3
+	note B_, 3
+	note A_, 3
+	note B_, 6
+	note G#, 6
+	note A_, 3
+	note B_, 3
+	octave 4
+	note C#, 6
+	note D_, 6
+	note C#, 3
+	octave 3
+	note B_, 3
+	octave 4
+	note E_, 6
+	note D_, 3
+	note C#, 3
+	octave 3
+	sound_ret
 
 Music_SSAnne_Ch3::
 	note_type 12, 1, 3

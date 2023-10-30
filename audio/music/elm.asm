@@ -242,7 +242,7 @@ Music_Elm_Ch2:
 	note F_, 4
 	sound_jump .mainloop
 
-Music_Elm_Ch3
+Music_Elm_Ch3:
 	note_type 12, 1, 3
 	rest 2
 	octave 4

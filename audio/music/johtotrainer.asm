@@ -583,7 +583,7 @@ Music_JohtoTrainer_Ch2:
 	note A_, 16
 	volume_envelope 11, 7
 	note A_, 16
-.loop1:
+.loop4:
 	volume_envelope 12, 3
 	octave 3
 	note A_, 2
@@ -595,7 +595,7 @@ Music_JohtoTrainer_Ch2:
 	note A_, 2
 	note G_, 2
 	note A#, 2
-	sound_loop 3, .loop1
+	sound_loop 3, .loop4
 	note A_, 2
 	octave 4
 	note D_, 2

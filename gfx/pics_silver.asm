@@ -426,15 +426,15 @@ KrabbyFrontpic:      INCBIN "gfx/pokemon/krabby/front_silver.2bpp.lz"
 CharmanderBackpic:   INCBIN "gfx/pokemon/charmander/back.2bpp.lz"
 PinecoFrontpic:      INCBIN "gfx/pokemon/pineco/front_silver.2bpp.lz"
 MistyPic:            INCBIN "gfx/trainers/misty.2bpp.lz"
+
+
+SECTION "Pics 10", ROMX
+
 HitmonchanFrontpic:  INCBIN "gfx/pokemon/hitmonchan/front_silver.2bpp.lz"
 BlainePic:           INCBIN "gfx/trainers/blaine.2bpp.lz"
 TyrogueFrontpic:     INCBIN "gfx/pokemon/tyrogue/front_silver.2bpp.lz"
 RattataFrontpic:     INCBIN "gfx/pokemon/rattata/front_silver.2bpp.lz"
 ParasFrontpic:       INCBIN "gfx/pokemon/paras/front_silver.2bpp.lz"
-
-
-SECTION "Pics 10", ROMX
-
 LarvitarBackpic:     INCBIN "gfx/pokemon/larvitar/back.2bpp.lz"
 SunkernBackpic:      INCBIN "gfx/pokemon/sunkern/back.2bpp.lz"
 PorygonBackpic:      INCBIN "gfx/pokemon/porygon/back.2bpp.lz"
@@ -487,16 +487,16 @@ KakunaBackpic:       INCBIN "gfx/pokemon/kakuna/back.2bpp.lz"
 DratiniFrontpic:     INCBIN "gfx/pokemon/dratini/front_silver.2bpp.lz"
 SlugmaFrontpic:      INCBIN "gfx/pokemon/slugma/front_silver.2bpp.lz"
 WobbuffetBackpic:    INCBIN "gfx/pokemon/wobbuffet/back.2bpp.lz"
+
+
+SECTION "Pics 11", ROMX
+
 CrobatBackpic:       INCBIN "gfx/pokemon/crobat/back.2bpp.lz"
 QwilfishFrontpic:    INCBIN "gfx/pokemon/qwilfish/front_silver.2bpp.lz"
 BlisseyBackpic:      INCBIN "gfx/pokemon/blissey/back.2bpp.lz"
 ZubatFrontpic:       INCBIN "gfx/pokemon/zubat/front_silver.2bpp.lz"
 StarmieBackpic:      INCBIN "gfx/pokemon/starmie/back.2bpp.lz"
 OddishFrontpic:      INCBIN "gfx/pokemon/oddish/front_silver.2bpp.lz"
-
-
-SECTION "Pics 11", ROMX
-
 IgglybuffFrontpic:   INCBIN "gfx/pokemon/igglybuff/front_silver.2bpp.lz"
 SpearowFrontpic:     INCBIN "gfx/pokemon/spearow/front_silver.2bpp.lz"
 IgglybuffBackpic:    INCBIN "gfx/pokemon/igglybuff/back.2bpp.lz"
@@ -558,6 +558,10 @@ TogepiFrontpic:      INCBIN "gfx/pokemon/togepi/front_silver.2bpp.lz"
 PiloswineBackpic:    INCBIN "gfx/pokemon/piloswine/back.2bpp.lz"
 HorseaFrontpic:      INCBIN "gfx/pokemon/horsea/front_silver.2bpp.lz"
 SwinubFrontpic:      INCBIN "gfx/pokemon/swinub/front.2bpp.lz"
+
+
+SECTION "Pics 12", ROMX
+
 NatuFrontpic:        INCBIN "gfx/pokemon/natu/front_silver.2bpp.lz"
 DiglettFrontpic:     INCBIN "gfx/pokemon/diglett/front_silver.2bpp.lz"
 NatuBackpic:         INCBIN "gfx/pokemon/natu/back.2bpp.lz"
@@ -567,10 +571,6 @@ CaterpieFrontpic:    INCBIN "gfx/pokemon/caterpie/front_silver.2bpp.lz"
 GolbatBackpic:       INCBIN "gfx/pokemon/golbat/back.2bpp.lz"
 UnownHBackpic:       INCBIN "gfx/pokemon/unown_h/back.2bpp.lz"
 SnorlaxBackpic:      INCBIN "gfx/pokemon/snorlax/back.2bpp.lz"
-
-
-SECTION "Pics 12", ROMX
-
 SuicuneFrontpic:     INCBIN "gfx/pokemon/suicune/front.2bpp.lz"
 BlastoiseFrontpic:   INCBIN "gfx/pokemon/blastoise/front_silver.2bpp.lz"
 CloysterFrontpic:    INCBIN "gfx/pokemon/cloyster/front_silver.2bpp.lz"
@@ -593,6 +593,10 @@ SlowkingFrontpic:    INCBIN "gfx/pokemon/slowking/front_silver.2bpp.lz"
 FearowFrontpic:      INCBIN "gfx/pokemon/fearow/front_silver.2bpp.lz"
 RhyhornFrontpic:     INCBIN "gfx/pokemon/rhyhorn/front_silver.2bpp.lz"
 BlackbeltTPic:       INCBIN "gfx/trainers/blackbelt_t.2bpp.lz"
+
+
+SECTION "Pics 13", ROMX
+
 GolduckFrontpic:     INCBIN "gfx/pokemon/golduck/front_silver.2bpp.lz"
 BikerPic:            INCBIN "gfx/trainers/biker.2bpp.lz"
 PersianFrontpic:     INCBIN "gfx/pokemon/persian/front_silver.2bpp.lz"
@@ -601,10 +605,6 @@ BrunoPic:            INCBIN "gfx/trainers/bruno.2bpp.lz"
 PrimeapeFrontpic:    INCBIN "gfx/pokemon/primeape/front_silver.2bpp.lz"
 ScytherFrontpic:     INCBIN "gfx/pokemon/scyther/front_silver.2bpp.lz"
 DragonairFrontpic:   INCBIN "gfx/pokemon/dragonair/front_silver.2bpp.lz"
-
-
-SECTION "Pics 13", ROMX
-
 HoundoomFrontpic:    INCBIN "gfx/pokemon/houndoom/front_silver.2bpp.lz"
 DewgongFrontpic:     INCBIN "gfx/pokemon/dewgong/front_silver.2bpp.lz"
 RaichuFrontpic:      INCBIN "gfx/pokemon/raichu/front_silver.2bpp.lz"
@@ -626,6 +626,10 @@ MediumPic:           INCBIN "gfx/trainers/medium.2bpp.lz"
 MagmarFrontpic:      INCBIN "gfx/pokemon/magmar/front_silver.2bpp.lz"
 HitmontopFrontpic:   INCBIN "gfx/pokemon/hitmontop/front_silver.2bpp.lz"
 ElectabuzzFrontpic:  INCBIN "gfx/pokemon/electabuzz/front_silver.2bpp.lz"
+
+
+SECTION "Pics 14", ROMX
+
 BlisseyFrontpic:     INCBIN "gfx/pokemon/blissey/front_silver.2bpp.lz"
 FisherPic:           INCBIN "gfx/trainers/fisher.2bpp.lz"
 HitmonleeFrontpic:   INCBIN "gfx/pokemon/hitmonlee/front_silver.2bpp.lz"
@@ -638,10 +642,6 @@ AmpharosFrontpic:    INCBIN "gfx/pokemon/ampharos/front_silver.2bpp.lz"
 MachampBackpic:      INCBIN "gfx/pokemon/machamp/back.2bpp.lz"
 FlareonFrontpic:     INCBIN "gfx/pokemon/flareon/front_silver.2bpp.lz"
 SpinarakFrontpic:    INCBIN "gfx/pokemon/spinarak/front.2bpp.lz"
-
-
-SECTION "Pics 14", ROMX
-
 UnownGFrontpic:      INCBIN "gfx/pokemon/unown_g/front.2bpp.lz"
 UnownHFrontpic:      INCBIN "gfx/pokemon/unown_h/front.2bpp.lz"
 MagnemiteBackpic:    INCBIN "gfx/pokemon/magnemite/back.2bpp.lz"
@@ -663,6 +663,9 @@ UnownZFrontpic:      INCBIN "gfx/pokemon/unown_z/front.2bpp.lz"
 UnownFFrontpic:      INCBIN "gfx/pokemon/unown_f/front.2bpp.lz"
 UnownBBackpic:       INCBIN "gfx/pokemon/unown_b/back.2bpp.lz"
 UnownJBackpic:       INCBIN "gfx/pokemon/unown_j/back.2bpp.lz"
+
+SECTION "Pics 15", ROMX
+
 UnownWFrontpic:      INCBIN "gfx/pokemon/unown_w/front.2bpp.lz"
 UnownOBackpic:       INCBIN "gfx/pokemon/unown_o/back.2bpp.lz"
 UnownZBackpic:       INCBIN "gfx/pokemon/unown_z/back.2bpp.lz"

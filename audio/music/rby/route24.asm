@@ -113,7 +113,7 @@ Music_Route24_Ch1:
 	note F#, 1
 	sound_ret
 
-Music_Routes2_Ch2:
+Music_Route24_Ch2:
 	vibrato 8, 2, 6
 	duty_cycle 3
 .mainloop:
@@ -179,7 +179,7 @@ Music_Routes2_Ch2:
 	note E_, 1
 	sound_ret
 
-Music_Routes2_Ch3::
+Music_Route24_Ch3::
 	vibrato 9, 2, 8
 .mainloop:
 	note_type 12, 1, 1
@@ -277,7 +277,7 @@ Music_Routes2_Ch3::
 	octave 2
 	sound_ret
 
-Music_Routes2_Ch4:
+Music_Route24_Ch4:
 	toggle_noise 0
 	drum_speed 12
 .mainloop:

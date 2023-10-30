@@ -523,14 +523,14 @@ Music_Champ_Ch3:
 	note F_, 2
 	note A_, 2
 .mainloop:
-.loop2:
+.loop3:
 	note D#, 2
 	note A#, 2
-	sound_loop 8, .loop2
-.loop3:
+	sound_loop 8, .loop3
+.loop4:
 	note E_, 2
 	note B_, 2
-	sound_loop 5, .loop3
+	sound_loop 5, .loop4
 	note E_, 2
 	octave 4
 	note C_, 2
@@ -539,14 +539,14 @@ Music_Champ_Ch3:
 	note B_, 2
 	note G_, 2
 	note A_, 2
-.loop4:
+.loop5:
 	note D#, 2
 	note A#, 2
-	sound_loop 8, .loop4
-.loop5:
+	sound_loop 8, .loop5
+.loop6:
 	note E_, 2
 	note B_, 2
-	sound_loop 8, .loop5
+	sound_loop 8, .loop6
 	sound_call .sub3
 	note E_, 2
 	note D#, 2
@@ -570,33 +570,33 @@ Music_Champ_Ch3:
 	note D#, 8
 	note B_, 8
 	note D#, 8
-.loop6:
-	note D#, 2
-	note F#, 2
-	sound_loop 16, .loop6
-	sound_call .sub4
-	octave 3
-	note E_, 2
-	note B_, 2
-	octave 4
-	note D#, 2
-	note E_, 2
-	note F#, 2
-	octave 3
-	note B_, 2
-	octave 4
-	note D#, 2
-	note E_, 2
-	sound_call .sub4
 .loop7:
+	note D#, 2
+	note F#, 2
+	sound_loop 16, .loop7
+	sound_call .sub4
 	octave 3
 	note E_, 2
 	note B_, 2
-	sound_loop 4, .loop7
+	octave 4
+	note D#, 2
+	note E_, 2
+	note F#, 2
+	octave 3
+	note B_, 2
+	octave 4
+	note D#, 2
+	note E_, 2
+	sound_call .sub4
 .loop8:
+	octave 3
+	note E_, 2
+	note B_, 2
+	sound_loop 4, .loop8
+.loop9:
 	note D#, 2
 	note A#, 2
-	sound_loop 5, .loop8
+	sound_loop 5, .loop9
 	note B_, 2
 	octave 4
 	note D#, 2
@@ -605,10 +605,10 @@ Music_Champ_Ch3:
 	rest 2
 	note D#, 2
 	rest 2
-.loop9:
+.loop10:
 	note E_, 2
 	note B_, 2
-	sound_loop 5, .loop9
+	sound_loop 5, .loop10
 	octave 4
 	note C#, 2
 	note E_, 2
@@ -617,24 +617,24 @@ Music_Champ_Ch3:
 	rest 2
 	note E_, 2
 	rest 2
-.loop10:
-	note D#, 2
-	note G#, 2
-	sound_loop 8, .loop10
 .loop11:
 	note D#, 2
+	note G#, 2
+	sound_loop 8, .loop11
+.loop12:
+	note D#, 2
 	note A#, 2
-	sound_loop 7, .loop11
+	sound_loop 7, .loop12
 	note B_, 2
 	note A#, 2
-.loop12:
+.loop13:
 	octave 3
 	note D#, 2
 	note A#, 2
 	octave 4
 	note D_, 2
 	note D#, 2
-	sound_loop 7, .loop12
+	sound_loop 7, .loop13
 	note C#, 2
 	octave 3
 	note B_, 2

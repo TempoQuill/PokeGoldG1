@@ -484,34 +484,34 @@ Music_NightWild_Ch3:
 	note F#, 2
 	note F_, 2
 	note D#, 2
-.loop6:
+.loop9:
 	note D_, 2
 	note G_, 2
-	sound_loop 8, .loop6
-.loop7:
+	sound_loop 8, .loop9
+.loop10:
 	note C_, 2
 	note F_, 2
-	sound_loop 7, .loop7
+	sound_loop 7, .loop10
 	note E_, 2
 	note C_, 2
 	note D_, 4
 	note G_, 4
 	note D_, 4
 	note G_, 4
-.loop8:
+.loop11:
 	note D_, 2
 	note G_, 2
-	sound_loop 12, .loop8
-.loop9:
+	sound_loop 12, .loop11
+.loop12:
 	note C_, 2
 	note E_, 2
-	sound_loop 7, .loop9
+	sound_loop 7, .loop12
 	note F_, 2
 	note F#, 2
-.loop10:
+.loop13:
 	note D_, 2
 	note G_, 2
-	sound_loop 6, .loop10
+	sound_loop 6, .loop13
 	note A_, 2
 	note G_, 2
 	note F#, 2

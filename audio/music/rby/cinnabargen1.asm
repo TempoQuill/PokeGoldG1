@@ -1,8 +1,8 @@
 Music_CinnabarGen1:
 	channel_count 3
-	chanenl 1, Music_CinnabarGen1_Ch1
-	chanenl 2, Music_CinnabarGen1_Ch2
-	chanenl 3, Music_CinnabarGen1_Ch3
+	channel 1, Music_CinnabarGen1_Ch1
+	channel 2, Music_CinnabarGen1_Ch2
+	channel 3, Music_CinnabarGen1_Ch3
 	; channel 4, Music_LookRocket_Ch4
 
 Music_CinnabarGen1_Ch1:
@@ -57,7 +57,7 @@ Music_CinnabarGen1_Ch1:
 	note E_, 1
 	note F#, 2
 	note A_, 2
-	volume_envelope, 10, 2
+	volume_envelope 10, 2
 	note G_, 4
 	octave 4
 	note D_, 1

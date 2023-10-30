@@ -564,7 +564,7 @@ Music_BikeGen1_Ch4:
 	sound_call .sub2
 .loop1:
 	drum_note 9, 4
-	sound_loop 19, loop1
+	sound_loop 19, .loop1
 	drum_note 9, 2
 	drum_note 9, 2
 	sound_call .sub4

@@ -119,7 +119,6 @@ ROMX $2b
 	"Map Blocks 2"
 ROMX $2e
 	"Pics 14"
-	org $6300
 	"bank2E_2"
 ROMX $30
 	"Sprites 1"
@@ -250,6 +249,8 @@ ROMX $70
 ROMX $7f
 	org $7df8
 	"Stadium 2 Checksums"
+ROMX $80
+	"Pics 15"
 WRAM0
 	"Audio RAM"
 	"WRAM"

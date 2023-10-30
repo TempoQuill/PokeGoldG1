@@ -1,9 +1,9 @@
 Music_IntroFight:
 	channel_count 4
-	chanenl 1, Music_IntroFight_Ch1
-	chanenl 2, Music_IntroFight_Ch2
-	chanenl 3, Music_IntroFight_Ch3
-	chanenl 4, Music_IntroFight_Ch4
+	channel 1, Music_IntroFight_Ch1
+	channel 2, Music_IntroFight_Ch2
+	channel 3, Music_IntroFight_Ch3
+	channel 4, Music_IntroFight_Ch4
 
 Music_IntroFight_Ch1:
 	tempo 98

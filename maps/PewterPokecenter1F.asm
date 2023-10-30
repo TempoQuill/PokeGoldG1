@@ -42,6 +42,11 @@ Chris:
 	closetext
 	end
 
+PewterJigglypuffText:
+	text "JIGGLYPUFF: Puu"
+	line "pupuu."
+	done
+	
 PewterPokecenter1FTeacherText:
 	text "…Yeah, and the"
 	line "GYM in CINNABAR's"

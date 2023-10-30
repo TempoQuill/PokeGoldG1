@@ -755,7 +755,7 @@ Music_KantoTrainer_Ch2::
 	note C_, 16
 	note E_, 8
 	note G_, 8
-	sound_jump .mainloo
+	sound_jump .mainloop
 
 Music_KantoTrainer_Ch3::
 	vibrato 0, 2, 0

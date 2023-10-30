@@ -176,6 +176,7 @@ Music_SilentHills_Ch2:
 	sound_jump .mainloop
 
 Music_SilentHills_Ch3:
+.mainloop:
 	note_type 12, 1, 3
 	rest 4
 	octave 4
@@ -248,6 +249,7 @@ Music_SilentHills_Ch4:
 	drum_speed 12
 	rest 4
 .mainloop:
+.loop1
 	drum_note 12, 6
 	drum_note 12, 6
 	drum_note 12, 2

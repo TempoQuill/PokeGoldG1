@@ -5,7 +5,7 @@ Music_Route36:
 	channel 3, Music_Route36_Ch3
 	channel 4, Music_Route36_Ch4
 
-Music_Route36_Ch1
+Music_Route36_Ch1:
 	tempo 145
 	volume 7, 7
 	pitch_offset 1

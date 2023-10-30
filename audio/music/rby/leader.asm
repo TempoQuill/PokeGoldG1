@@ -1,5 +1,5 @@
 Music_KantoLeader:
-	channel_count
+	channel_count 3
 	channel 1, Music_KantoLeader_Ch1
 	channel 2, Music_KantoLeader_Ch2
 	channel 3, Music_KantoLeader_Ch3
@@ -603,7 +603,7 @@ Music_KantoLeader_Ch3:
 	note A_, 2
 	octave 4
 	note E_, 2
-	sound_loop 8, sub2loop1
+	sound_loop 8, .sub2loop1
 	sound_ret
 
 .sub3:
